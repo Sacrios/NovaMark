@@ -24,7 +24,7 @@
         <div id="navbar">
             <nav class="navbar navbar-expand-lg bg-body-tertiary" style="font-size: 30px;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="Resources/logo6.png" alt="NovaMark -Studio-" height="200"></a>
+                    <a class="navbar-brand" href="#"><img src="Resources/logo6.png" alt="NovaMark -Studio-" height="150"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -34,11 +34,11 @@
                                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#">Quienes somos?</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
+                                    Servicios
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -53,12 +53,112 @@
                         </ul>
                         <form class="d-flex" role="search" style="padding-right: 200px;">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="button" type="submit">Search</button>
+                            <button class="button" id="cta" type="submit">Buscar</button>
                         </form>
                     </div>
                 </div>
             </nav>
         </div>
-    </header>    
+    </header>
+    <main>
+        <div id="primer-parte">
+            <div id="main-container">
+                <h1 style="font-size: 60px;">¡Bienvenido a NovaMark -Studio-!</h1>
+            </div>
+            <div style="font-size: large; margin-top: 30px;">
+                <p>En NovaMark -Studio- nos dedicamos a la creación de contenido digital, desde la creación de páginas web hasta la creación de contenido audiovisual.</p>
+                <p>Si tienes alguna duda o necesitas más información, no dudes en contactarnos.</p>
+                <p>¡Gracias por visitarnos!</p>
+            </div>
+            <section id="mision">
+                <h1 style="font-size: 50px;">Mision</h1>
+                <!-- <p>En Nova Mark , nuestra misión es transformar ideas en realidades digitales, ofreciendo soluciones web y de asistencia virtual diseñadas para empoderar a emprendedores y empresas. Trabajamos con profesionalismo, compromiso e integridad, garantizando resultados de alta calidad que generan confianza y aportan valor a cada proyecto. Nos enfocamos en construir relaciones cercanas y familiares con nuestros clientes, entendiendo sus necesidades únicas y ayudándolos a alcanzar sus metas con diligencia e inspiración.</p> -->
+                <div style="display: flex; align-items: center;">
+                    <p style="flex: 1;">En Nova Mark , nuestra misión es transformar ideas en realidades digitales, ofreciendo soluciones web y de asistencia virtual diseñadas para empoderar a emprendedores y empresas. Trabajamos con profesionalismo, compromiso e integridad, garantizando resultados de alta calidad que generan confianza y aportan valor a cada proyecto. Nos enfocamos en construir relaciones cercanas y familiares con nuestros clientes, entendiendo sus necesidades únicas y ayudándolos a alcanzar sus metas con diligencia e inspiración.</p>
+                    <img src="/Resources/mision.jpg" alt="" width="25%">
+                </div></div>
+            </section>
+            <section id="vision">
+                <h1 style="font-size: 50px;">Vision</h1>
+                <div style="display: flex; align-items: center;">
+                    <img src="/Resources/vision.jpg" alt="" width="25%" style="margin-right: 10px;">
+                    <p style="flex: 1;">Ser reconocidos como un socio estratégico de referencia en el ámbito digital, destacándonos por nuestra capacidad para combinar tecnología innovadora y un enfoque humano en cada proyecto. Aspiramos a convertirnos en una marca líder que inspire a nuestros clientes a soñar en grande, brindándoles las herramientas necesarias para crecer y triunfar en un entorno digital en constante evolución.
+                    </p>
+                </div>
+            </section>
+            <section id="valores">
+                <h1 style="font-size: 50px;">Valores</h1>
+                <div style="display: flex; align-items: center;">
+                    <ul style="flex: 1;">
+                        <li><strong>Profesionalidad:</strong> Nos esforzamos por ofrecer servicios de excelencia, adaptados a las necesidades de nuestros clientes.</li>
+                        <li><strong>Confianza:</strong> Construimos relaciones sólidas basadas en la transparencia y el respeto mutuo.</li>
+                        <li><strong>Familiaridad:</strong> Creemos en un trato cálido y cercano que fomenta la colaboración.</li>
+                        <li><strong>Compromiso:</strong> Nos dedicamos plenamente a cumplir con las expectativas de nuestros clientes, superándolas cuando sea posible.</li>
+                        <li><strong>Integridad:</strong> Actuamos con honestidad y ética en todo lo que hacemos.</li>
+                        <li><strong>Respeto:</strong> Valoramos la diversidad de nuestros clientes y sus proyectos, tratándolos siempre con dignidad.</li>
+                        <li><strong>Diligencia:</strong> Somos meticulosos y eficientes en la ejecución de cada tarea.</li>
+                        <li><strong>Inspiración y motivación:</strong> Nos apasiona ser una fuerza positiva que impulsa a nuestros clientes a alcanzar sus sueños.</li>
+                    </ul>
+                    <img src="/Resources/valores.jpg" alt="" width="25%" style="margin-left: 10px;">
+                </div>
+            </section>
+        </div>
+        <div id="contacto">
+            <div id="formulario">
+            <div style="text-align: center; margin-top: 50px;">
+                <h2>Formulario de Consulta</h2>
+                <form id="consultaForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="consulta" class="form-label">Consulta</label>
+                        <textarea class="form-control" id="consulta" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                </div>
+            </div>
+    
+            <script>
+                document.getElementById('consultaForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    alert('Su consulta ha sido enviada, responderemos a la brevedad.');
+                    setTimeout(function() {
+                        alert.close();
+                    }, 5000);
+                });
+            </script>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <h2>Contacto</h2>
+                <p>Puedes contactarnos a través de nuestras redes sociales:</p>
+                <div style="display: flex; justify-content: center; gap: 20px;">
+                    <a href="https://wa.me/1234567890" target="_blank">
+                        <img src="Resources/WspLogo.png" alt="WhatsApp" width="50">
+                    </a>
+                    <a href="https://www.instagram.com/tu_usuario" target="_blank">
+                        <img src="Resources/instagram.png" alt="Instagram" width="50">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <div style="height: 50px;"></div>
+    <footer style="background-color: black; color: white; height: 30px; position: fixed; bottom: 0; width: 100%; text-align: center;">
+        <p>NOVAMARK -STUDIO- 2025</p>
+    </footer>
 </body>
 </html>

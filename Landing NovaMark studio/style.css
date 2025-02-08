@@ -2,78 +2,99 @@
 
 body{}
 
+
 /* Solo los enlaces en el navbar se vuelven rojos al pasar el mouse */
 #navbar a.nav-link:hover {
     color: red;
 }
 
-
-
-
-
-/* From Uiverse.io by gharsh11032000 */ 
-.button {
-    position: relative;
-    background-color: transparent;
-    color: #e8e8e8;
-    font-size: 15px;
-    font-weight: 500;
+.button{
+    border: white 4px solid;
     border-radius: 10px;
-    width: 150px;
-    height: 70px;
-    border: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:black;
+    color: white;
+    transition: border 300ms ease-out, border-radius 300ms ease-out;
+}
+
+.button:hover{
+    background-color: tomato;
+    color: black;
+    border: 4px solid rgba(100, 100, 100, 1);
+    border-radius: 4px;
+}
+
+main {
+    width: 90%; /* Ancho del 80% del contenedor */
+    max-width: 1200px; /* Máximo ancho */
+    min-height: 100vh; /* Al menos todo el alto de la pantalla */
+    margin: 0 auto; /* Centramos horizontalmente */
+    margin-top: 50px; /* Margen superior */
+    background-color: rgb(248, 248, 248);
+
+    padding: 20px;
   }
-  
-  .button::before {
-    content: "Hello!";
+
+#main-container{
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(135deg,#7b4397,#dc2430 );
-    transform: translate(0%,90%);
-    z-index: 99;
-    position: relative;
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .button::after {
-    content: "Hover me";
-    display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #333;
+    text-align: center;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+#mision {
     width: 100%;
-    height: 100%;
-    pointer-events: none;
-    transform-origin: top;
-    transform: translate(0%,-100%);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .button:hover::before {
-    transform: translate(0%,0%);
-  }
-  
-  .button:hover::after {
-    transform: translate(0%,-200%);
-  }
-  
-  .button:focus {
-    outline: none;
-  }
-  
-  .button:active {
-    scale: 0.95;
-  }
-  
-  
-  
+    border: black 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    float: left;
+    background-color:rgb(234, 92, 88);
+}
+
+
+#vision {
+    width: 100%;
+    border: black 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    float: right;
+    clear: both;
+    background-color:rgb(238, 239, 244) ;
+}
+
+#valores{
+    width: 100%;
+    border: black 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    float: right;
+    clear: both;
+    background-color:rgb(90,187,205) ;
+    margin-bottom: 100px;
+}
+
+#valores ul{
+    text-align: left;
+}
+
+#formulario{
+    width: 100%;
+    border: black 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    float: right;
+    clear: both;
+    background-color:rgb(238, 239, 244) ;
+    margin-bottom: 100px;
+}
+
+#formulario button{
+    margin-bottom: 20px;
+}
